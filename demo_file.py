@@ -211,3 +211,122 @@
 #end perameter :print("Hello", end=" ")
 #print("World")
 # Output: Hello World (on a single line)
+
+####conditional statement
+#age =  18
+#if age>= 18 :
+#    print("You are an adult")
+
+###else
+#temperature = 35
+#if temperature >30: 
+#    print("It is hot outside.")
+#    print("Too hot")
+#else:
+#    print("The weather is good.")
+
+
+#elif
+#score = 75
+#if score >= 90:
+#    grade = "A"
+#elif score>= 80:
+#    grade = "B"
+
+#marks = 45
+#if marks>=90:
+#    print("Grade = A")
+#elif marks>80:
+#    print("Grade = B")
+#elif marks>70:
+#    print("Grade = C")
+#else:
+#    print("Failed")
+
+#name = "Ram"
+#age =14
+
+#if age >=18:
+#    print(f"{name} is regestered to vote.")
+#else:
+#    print(f"{name} is an invalid user.")
+#    print("You must 18+.")
+
+
+#1
+#num = int(input("Enter a number"))
+#if num<=100:
+#   print("Valid")
+#else:
+#    print("invalid") 
+
+#2)
+#num = int(input("Enter a number."))
+#if num %2 == 0:
+#    print("Even")
+#else:
+#    print("odd") 
+
+
+#3
+#num = int(input("Enter number between 1-12"))
+#if num==1:
+#    print("January")
+#elif num==2:
+#     print("feb")
+#elif num==3:
+#     print("march")
+#elif num==4:
+#     print("april")
+#elif num==5:
+#print("may")
+#elif num==6:
+#     print("june")
+#elif num==7:
+#     print("july")
+#elif num== 8:
+#     print("aug")
+#elif num==9 :
+#     print("sep")
+#lif num==10:
+#     print("oct")
+#elif num== 11:
+#     print("nov")
+#elif num ==12:
+#     print("dec")
+#else:
+#     print("Invalid")
+
+###in dictionary method
+#user_input= int(input("Enter a number"))
+ # month={1:"jan,"}
+
+#6
+#num1 =int(input("enter num1"))
+#num2 = int(input("enter num2"))
+#op = input("enter op")
+#ops = {"+": num1+num2,"-":num1-num2}
+#if op in ops:
+#     print(ops[op])
+#else:
+ #    print('invalid symbol')
+
+ 
+#8
+#integer = int(input("enter an integer"))
+#if integer%3==0 and integer%5==0:
+#    print("FizzBuzz")
+#elif integer%3==0:
+#    print("Fizz")
+#elif integer%5==0:
+#    print("Buzz")
+#else:"nothing"
+
+#7
+#salary = int(input("Enter your salary"))
+#Creditscore = int(input("Enter your credit score"))
+#if salary >=50000 and Creditscore >=700:
+#    print("Eligiable")
+#else:
+#    print("Not Eligible")
+    

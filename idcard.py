@@ -89,7 +89,7 @@ print(filesname.lstrip("/"))
 
 #A web scraper fetches product prices as ‘Price: $120.33 ‘ with trailing spaces. Clean the right side using rstrip() and remove symbols too.
 Price= "$120.33"
-print(Price.rstrip("$"))
+print(Price.lstrip("$"))
 
 #19. A phone number formatter takes ‘+977 984-123-4567’ and removes all dashes - using replace() to store only digits format. 
 number = "+977 984-123-4567"
