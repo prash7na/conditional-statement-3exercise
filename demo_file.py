@@ -333,62 +333,317 @@
 
 
 ### first name
-first_name = input("Enter your name: ")
-if first_name =="":
-    print("First name cannot be empty.")
-elif not first_name.isalpha():
-    print("Must be letters only")
-else:
-    print("Valid")
+#first_name = input("Enter your name: ")
+#if first_name =="":
+#    print("First name cannot be empty.")
+#elif not first_name.isalpha():
+#    print("Must be letters only")
+#else:
+#    print("Valid")
 
 ###Last name
-last_name = input("Enter your last name: ")
-if last_name=="":
-
-    print("Last name cannot be empty")
-elif last_name.isalpha:
-    print("Valid")
-else:
-    print("Must be lettrs only.")
+#last_name = input("Enter your last name: ")
+#if last_name=="":
+    #print("Last name cannot be empty")
+#elif last_name.isalpha:
+#    print("Valid")
+#else:
+#    print("Must be lettrs only.")
 
 
 ###email
-email = input("Enter your E-mail")
-if "@"in email and "." in email:
-    print("Valid")
-else:
-    print("Invalid")
+#email = input("Enter your E-mail")
+#if "@"in email and "." in email:
+#    print("Valid")
+#else:
+#    print("Invalid")
 
 
 ###Re-email
-re_email = input("Enter your email again")
-if re_email == email:
-    print("Valid")
-else:
-    print("E-mail and re-email doesnot match")
+#re_email = input("Enter your email again")
+#if re_email == email:
+#    print("Valid")
+#else:
+#    print("E-mail and re-email doesnot match")
 
 
 ####Password
-password = int(input("Enter your password"))
-if len(password) >=6:
-    print("Valid")
-else:
-    print("minimum 6 characters needed")
+#password = int(input("Enter your password"))
+#if len(password) >=6:
+#    print("Valid")
+#else:
+#    print("minimum 6 characters needed")
 
 
 
 
-##if not (First_name and Last_name):
+##if not (First_name and Last_name and email and re_email):
 ##  print("all fields are mandatory")
 #elif not(first_name.isaplha() and last_name,isalpha()):
      #print("must enter letters only")
-#elif not("@" in email and "." in email):
-    #print("INvalid")
+#elif not("@" in email and "." in email and "@" in re_email and "." in re_email):
+    #print("Invalid")
 #elif not(email == re-email):
     #print("email not matched")
+#else:
+#print("Registered Sucessfully")
+
+
+####   Nested 
+#command1 = input("Scissor/Paper/rock")
+#command2 = input("Scissor/Paper/rock")
+#if command1 ==  command2:
+#    print("It's a tie!!")
+
+#elif command1 == "rock":
+#  if command2 =="scissor":
+#    print("Player 1 won")
+#  else:
+#    print("Player 2 won")
+#
+#elif command1=="scissor":
+#  if command2=="rock":
+#    print("player2 won")
+#  else:
+#     print("Player 1 won")
+#
+#elif command1 == "paper":
+#    if command2 == "rock":
+#        print("player1 won")
+#    else:
+#        print("Player 2 won")
+
+
+#else:
+#    print("Invalid input")
+
+
+##### nested way
+#balance = 20000
+#is_card_valid = True
+
+#correct_pin = 1234
+
+#print("Weolcome to 123Back")
+
+#user_pin = int(input("Enter your pin: "))
+
+#if user_pin == correct_pin:
+#    print ("1.check balance")
+#    print(".Withdraw amount")
+#    print("3.Exit")
+#    choice= int(input("Select an option(1-3): "))
+#    if choice ==1:
+#        print(f"Your balance is {balance}")
+#    elif choice ==2:
+#        amount = int(input("Enter the amount"))
+#          
+#        if amount<= balance:
+#           print(f"Please collect your cash:Rs{amount}")
+#            print(f"your updated balance is Rs:{balance-amount}")
+#        elif amount<=0:
+#            print("Invalid amount")
+#        else:
+#            print("Insufficient Balance")
+#    elif choice ==3:
+#       print("Thank you for visiting.")
+#    else:
+#        print("Invalid selection")
+#else:
+#    print("Invalid Pin")
+    
+
+####    Elevator
+
+#user_input = int(input("Enter your floor number (1-10):"))
+
+
+#if 1<= user_input <=10:
+#    print("Valid floor")
+#    weight = int(input("Enter the total weight:"))
+#    if weight<=500:
+#        print("valid Weight")
+#        door = input("Is the door closed?").lower()
+#        if door =="yes":
+#            print("Lift moving up")
+#        else:
+#            print("The door isnot closed.")
+#    elif weight<0:
+#        print("Invalid weight")
+#    else:
+#        print("weight cannot be more than 500kg")
+#else:
+#   print("Invalid floor")
 
 
 
+####   Questions
+#5.
+total_purchase_amount = int(input("Enter your purchase amount"))
+user_input = 6000
+if total_purchase_amount>5000:
+   has_membership = input("Do you have membership?").lower()
+   if has_membership == "yes":
+     persent_membership = input("do you have membership card now?").lower()
+     if persent_membership =="yes": 
+      discount=total_purchase_amount*0.30
+      final_amount=total_purchase_amount - discount
+      print(f"final amount = {discount}")
+      print(f"Total saved = {final_amount}" )
+     else:
+        print(f"Final bill = {total_purchase_amount}")
+   else:
+     print(f"Final bill = {total_purchase_amount}") 
+else:
+    print(f"Final bill = {total_purchase_amount}")
 
-####  Match case:used if the codes are same
 
+
+#6
+print("Welcome to the Magic Forest")
+direction = input("Go north or south").lower()
+if direction =="north":
+   print("stage 2")
+   path = input("cross the river or follow the path").lower()
+   if path == ("cross the river"):
+      print("Stage 3")
+      angel = input("Chose fairy,ogre and elf").lower()
+      if angel==("elf"):
+         print("Stage 4")
+      else:
+         print("Game over")
+   else:
+      print("Game over")
+else:
+   print("Game Over")
+
+
+#10.
+body_weight = float(input("Enter your body weight"))
+height = float(input("Enter your height"))
+BMI = body_weight/(height**2)
+
+if BMI<18.5:
+   print("Underweight")
+elif 18.5<= BMI<=25:
+   print("Normal weight")
+elif 25<BMI<=30:
+   print("Overweight")
+else:
+    print("Obese")
+
+
+
+#16
+units = float(input("Enter your electricity units"))
+if units<=100:
+   cost = units*5
+   print(f"total_cost={cost}")
+elif 100<units<=300:
+   cost = (100*5)+((units-100)*8)
+   print(f"total cost = {cost}")
+else:
+   cost=(100*5)+(200*8)+((units-200)*10)
+   print(f"total cost = {cost}")
+
+#19. A store gives a 20% discount if the total purchase is above RS
+#1000 AND the customer is a member, or a 10% discount if the
+#purchase is above RS 1000 but the customer is not a member. Write a
+#program that takes total_amount and is_member (True/False) as
+#input and prints the final amount after applying the correct discount
+#or no discount
+total_amount=int(input("Enter your amount"))
+if total_purchase_amount>1000:
+   is_member = input("Are you member(yes/no?").lower()
+   if is_member == "yes":
+      discount=total_amount*0.20
+      final_amount=total_amount-discount
+      print(f"final amount={final_amount}")
+   else:
+      discount=total_amount*0.10
+      final_amount=total_amount-discount
+      print(f"Final amount={final_amount}")
+else:
+   print(f"Final amount={total_amount}")
+
+#20
+weight=float(input("Enter your earth weight: "))
+planet={
+   1:0.38,
+   2:0.91,
+   3:0.38,
+   4:2.53,
+   5:1.07,
+   6:0.89,
+   7:1.14
+}
+planet_number=int(input("Enter your planet number(1-7): "))
+if planet_number in planet:
+   gravity=planet[planet_number]
+   print(f"weight={weight}*{planet}")
+else:
+   print("Invalid planet number")
+
+
+#21
+math =float(input("Enter maths mark"))
+science =float(input("Enter science mark"))
+social =float(input("Enter social mark"))
+nepali =float(input("Enter nepali mark"))
+
+total_marks=math+science+social+nepali
+print(f"total marks = {total_marks}")
+percentage = (total_marks/400)*100
+print(f"percentage={percentage}")
+if percentage > 70:
+   print("grade:distinction")
+elif percentage>60:
+   print("First")
+elif percentage>40:
+   print("pass")
+else:
+   print("fail")
+
+#22
+is_card_valid="true"
+initial_balance = 5000
+correct_pin=123
+
+pin=int(input("Enter your pin"))
+if pin == correct_pin:
+   while True:
+      print("\n---ATM MENU---")
+      print("1=Withdraw")
+      print("2=check Balance")
+      print("3=Exit")
+      choice = input("Select an option(1-3: ")
+      if choice == "1":
+         amount=float(input("Enter amount to withdraw"))
+         if amount<=initial_balance:
+            balance = initial_balance-amount
+            print(f"Rs{amount} is detucted.you current balance is Rs{balance}")
+         else:
+            print("indufficient balance")
+      elif choice =="2":
+         print(f'Balance ={initial_balance}')
+      elif choice =="3":
+          print("Thank you for visiting.")
+      else:
+         print("Invalid option.")
+else:
+   print("Incorrect pin")
+
+
+#23
+target_floor=int(input("Enter your floor number(0-10): "))
+weight=float(input("Enter your weight(In KG): "))
+door_status=input("Is door open or closed?: ").lower()
+
+if 0>target_floor or target_floor>10:
+   print("Invalid Floor")
+elif weight>500:
+   print("over weight:lift cannot move")
+elif door_status =="open":
+   print("WARNING:CLOSE THE DOOR")
+else:
+   print("ACTIVATE ELEVATOR MOTION")
